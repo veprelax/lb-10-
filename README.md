@@ -63,6 +63,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    sudo adduser user2
    sudo adduser user3
    ```
+![4a197f55-8660-48c9-aa4b-14b636100a5b](https://github.com/user-attachments/assets/defabfb8-a609-45f5-8886-247313e8b7fd)
 
 2. **Create a new user group and add two of the three created users:**
    ```bash
