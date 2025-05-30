@@ -1,6 +1,6 @@
 ## Виконала самостійно Слобожан Софія РПЗ-23А
 # Laboratory Work Report №10
-mlalala
+
 ## Topic: Changing File Ownership and Access Rights in Linux. Special Directories and Files in Linux
 
 ## Objective:
@@ -63,6 +63,8 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    sudo adduser user2
    sudo adduser user3
    ```
+   
+![4a197f55-8660-48c9-aa4b-14b636100a5b](https://github.com/user-attachments/assets/083e88a2-870a-4896-81c6-a4c49106f674)
 
 2. **Create a new user group and add two of the three created users:**
    ```bash
@@ -70,17 +72,23 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    sudo usermod -aG mygroup user1
    sudo usermod -aG mygroup user2
    ```
+   
+![868d4eff-18a1-4d1b-80a8-c092a3dc2238](https://github.com/user-attachments/assets/cdf62e47-6dea-4736-afe4-1684ead2b0cb)
 
 3. **Create a new file accessible for reading, editing, and execution by the owner:**
    ```bash
    touch myscript.sh
    chmod 700 myscript.sh
    ```
+   
+![ef531582-ce58-4941-bb2d-61c9556bc295](https://github.com/user-attachments/assets/b423091d-5b2b-4624-85b4-b8a9745c8b65)
 
 4. **Grant group members permission to read and execute (no write access) the file:**
    ```bash
    chmod 750 myscript.sh
    ```
+   
+![1709fd40-2162-40ff-ac11-91fe104a700a](https://github.com/user-attachments/assets/77be808b-6933-4027-9c30-c5a4f10315f1)
 
 5. **Create directories with different access permissions:**
    ```bash
@@ -90,6 +98,8 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    mkdir private_dir
    chmod 700 private_dir
    ```
+   
+![7cc8286c-54dd-4290-bcb8-d3fcad7cb5df](https://github.com/user-attachments/assets/a09eb66e-1b2d-4d3f-b6d7-aaabda62e4a6)
 
 6. **Create an empty file and change its permissions:**
    ```bash
@@ -97,6 +107,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    chmod 000 emptyfile
    ```  
    Observations on changes when using `chmod 4 emptyfile` or `chmod 44 emptyfile` reflect how `chmod` interprets numeric values (single digit sets owner permissions only, two digits set owner and group permissions).
+![b6f68171-6917-4a52-b8db-9a448f275a58](https://github.com/user-attachments/assets/dc127a11-6e57-44eb-829d-327cc80a483f)
 
 7. **Create a directory where all files belong to your group and can only be deleted by their creator:**
    ```bash
