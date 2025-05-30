@@ -63,6 +63,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    sudo adduser user2
    sudo adduser user3
    ```
+   ![5319188851908015200](https://github.com/user-attachments/assets/d07bb7d1-0f2a-46f7-bc4d-9a3c2208a64e)
 
 2. **Create a new user group and add two of the three created users:**
    ```bash
@@ -70,17 +71,20 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    sudo usermod -aG mygroup user1
    sudo usermod -aG mygroup user2
    ```
+![868d4eff-18a1-4d1b-80a8-c092a3dc2238](https://github.com/user-attachments/assets/082686dc-36ed-45e0-b5e7-3bdb9490bf54)
 
 3. **Create a new file accessible for reading, editing, and execution by the owner:**
    ```bash
    touch myscript.sh
    chmod 700 myscript.sh
    ```
+![ef531582-ce58-4941-bb2d-61c9556bc295](https://github.com/user-attachments/assets/de61e4f7-e1cb-4579-b6c9-de9d84f5ab22)
 
 4. **Grant group members permission to read and execute (no write access) the file:**
    ```bash
    chmod 750 myscript.sh
    ```
+![1709fd40-2162-40ff-ac11-91fe104a700a](https://github.com/user-attachments/assets/9b119a6d-0264-4c12-bca3-3ef3c451a3b0)
 
 5. **Create directories with different access permissions:**
    ```bash
@@ -90,6 +94,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    mkdir private_dir
    chmod 700 private_dir
    ```
+![7cc8286c-54dd-4290-bcb8-d3fcad7cb5df](https://github.com/user-attachments/assets/7affb13f-d957-4107-9a16-fa8395f53fe9)
 
 6. **Create an empty file and change its permissions:**
    ```bash
@@ -97,22 +102,25 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    chmod 000 emptyfile
    ```  
    Observations on changes when using `chmod 4 emptyfile` or `chmod 44 emptyfile` reflect how `chmod` interprets numeric values (single digit sets owner permissions only, two digits set owner and group permissions).
+   
+![b6f68171-6917-4a52-b8db-9a448f275a58](https://github.com/user-attachments/assets/faa9d6c3-8044-4ee6-99cb-348732a9d52e)
 
-7. **Create a directory where all files belong to your group and can only be deleted by their creator:**
+8. **Create a directory where all files belong to your group and can only be deleted by their creator:**
    ```bash
    mkdir /home/team
    chown :mygroup /home/team
    chmod 2770 /home/team
    ```
 
-8. **Create for each user one new file, then create hard and symbolic links to it:**
+
+9. **Create for each user one new file, then create hard and symbolic links to it:**
    ```bash
    touch original_file
    ln original_file hard_link
    ln -s original_file symbolic_link
    ```
 
-9. **Test file viewing and deletion by other users and draw conclusions.**
+10. **Test file viewing and deletion by other users and draw conclusions.**
 
 ### Control Questions
 
