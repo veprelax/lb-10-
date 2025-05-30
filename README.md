@@ -106,7 +106,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    touch emptyfile
    chmod 000 emptyfile
    ```  
-   Observations on changes when using `chmod 4 emptyfile` or `chmod 44 emptyfile` reflect how `chmod` interprets numeric values (single digit sets owner permissions only, two digits set owner and group permissions).
+   Observations on changes when using `chmod 4 emptyfile` or `chmod 44 emptyfile` reflect how `chmod` interprets numeric values (single digit sets owner permissions only, two digits set owner and group permissions).                                                                                                                                                                                                                
 ![b6f68171-6917-4a52-b8db-9a448f275a58](https://github.com/user-attachments/assets/dc127a11-6e57-44eb-829d-327cc80a483f)
 
 7. **Create a directory where all files belong to your group and can only be deleted by their creator:**
