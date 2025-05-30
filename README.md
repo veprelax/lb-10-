@@ -115,6 +115,9 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    chown :mygroup /home/team
    chmod 2770 /home/team
    ```
+   
+   ![image](https://github.com/user-attachments/assets/87756179-84b7-4f40-b31d-f6196ed44563)
+
 
 8. **Create for each user one new file, then create hard and symbolic links to it:**
    ```bash
@@ -122,6 +125,7 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
    ln original_file hard_link
    ln -s original_file symbolic_link
    ```
+![image](https://github.com/user-attachments/assets/881483a8-f82e-4fca-a2a9-7abe778c958c)
 
 9. **Test file viewing and deletion by other users and draw conclusions.**
 
