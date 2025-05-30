@@ -1,3 +1,4 @@
+## Виконала самостійно Слобожан Софія РПЗ-23А
 # Laboratory Work Report №10
 
 ## Topic: Changing File Ownership and Access Rights in Linux. Special Directories and Files in Linux
@@ -114,53 +115,6 @@ To acquire practical skills in working with the Bash shell. To get acquainted wi
 9. **Test file viewing and deletion by other users and draw conclusions.**
 
 ### Control Questions
-
-1. **Examples of changing access rights using symbolic method:**
-   ```bash
-   chmod u+x file.txt
-   chmod g-w file.txt
-   ```
-
-2. **Examples of changing access rights using numeric (octal) method:**
-   ```bash
-   chmod 755 file.txt
-   chmod 644 file.txt
-   ```
-
-3. **Purpose of the `umask` command:**  
-   Sets the default file creation mask, which affects default permissions for new files and directories.
-
-4. **Comparison of hard and symbolic links:**  
-   Hard links point to the same inode and are indistinguishable from the original file. Symbolic links are pointers referencing another file name and can cross filesystem boundaries.
-
-5. **Is it possible to execute a file with execute but no read permissions? Explain.**  
-   Usually, a file must be readable to be executed because the kernel needs to read its contents; however, some scripts may not execute without read permission.
-
-6. **Are permission changes persistent across sessions?**  
-   Yes, file permission changes persist until explicitly changed again.
-
-7. **Is there a default pattern for permissions when creating new files? How to change it?**  
-   Yes, the default permissions depend on the `umask`. The `umask` value can be changed with the command `umask`.
-
-8. **How to create hard links and when to use them:**  
-   ```bash
-   ln original.txt hardlink.txt
-   ```  
-   Use hard links when you want multiple file names referencing the same content on the same filesystem.
-
-9. **How to create symbolic links and when to use them:**  
-   ```bash
-   ln -s original.txt symlink.txt
-   ```  
-   Use symbolic links to reference files across filesystems or to create shortcuts.
-
-10. **Appropriate directory for creating temporary one-time files:**  
-    The `/tmp` directory is intended for temporary files that are deleted on reboot.
-
-11. **What happens when deleting files with links:**  
-    - Deleting the original file leaves hard links intact since they reference the same inode. Symbolic links will be broken.  
-    - Deleting a symbolic link only removes the link, without affecting the original file.
-## Control Questions
 
 1. **Examples of changing access rights using the symbolic method:**
    - To add execute permission for the owner:
